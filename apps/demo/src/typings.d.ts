@@ -11,7 +11,7 @@ declare const PR:any;
 // declare const global:any;
 // eslint-disable-next-line @typescript-eslint/prefer-namespace-keyword
 declare module jasmine {
-  interface Matchers<T> {
+  interface Matchers {
     toHaveCssClass(expected: any): boolean;
   }
 }
