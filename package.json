@@ -5,8 +5,8 @@
   "description": "Angular file upload directives",
   "scripts": {
     "start": "npx nx run ng2-file-upload-demo:serve",
-    "demo.build": "ng build",
-    "demo.build-prod": "ng build",
+    "demo.build": "nx run ng2-file-upload-demo:build",
+    "demo.build-prod": "nx run ng2-file-upload-demo:build:production",
     "build": "nx run ng2-file-upload:build",
     "build-prod": "nx run ng2-file-upload:build",
     "lint": "nx run-many --target=lint --all",
