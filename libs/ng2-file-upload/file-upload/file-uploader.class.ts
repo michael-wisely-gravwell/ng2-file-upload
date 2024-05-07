@@ -1,6 +1,6 @@
 import { EventEmitter } from '@angular/core';
-import { FileLikeObject } from './file-like-object.class';
 import { FileItem } from './file-item.class';
+import { FileLikeObject } from './file-like-object.class';
 import { FileType } from './file-type.class';
 
 function isFile(value: any): boolean {
@@ -446,6 +446,7 @@ export class FileUploader {
     return (status >= 200 && status < 300) || status === 304;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   protected _transformResponse(response: string, headers: ParsedResponseHeaders): string {
     return response;
   }

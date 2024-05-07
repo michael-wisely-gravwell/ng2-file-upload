@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterContentInit, Component } from '@angular/core';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const gettingStarted = require('html-loader!markdown-loader!../getting-started.md');
 
@@ -42,7 +42,7 @@ const gettingStarted = require('html-loader!markdown-loader!../getting-started.m
   </footer>
   `
 })
-export class AppComponent {
+export class AppComponent implements AfterContentInit {
   public gettingStarted:string = gettingStarted;
   public ngAfterContentInit(): any {
     setTimeout(()=>{
